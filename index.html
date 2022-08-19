@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Cristhian Jonathan Mamani Julliri">
+   <title>Swiper demo - Parallax</title>
+
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+   <!-- Swiper -->
+
+   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      <div class="parallax-bg" style="background-image: url(./img/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);" data-swiper-parallax="-23%"></div>
+      <div class="swiper-wrapper">
+         <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">HTML</div>
+            <div class="subtitle" data-swiper-parallax="-200">Lenguaje de etiquetas de hipertexto</div>
+            <div class="text" data-swiper-parallax="-100">
+               <p>
+                  HTML es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto
+               </p>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">CSS</div>
+            <div class="subtitle" data-swiper-parallax="-200">Hojas de estilo en cascada</div>
+            <div class="text" data-swiper-parallax="-100">
+               <p>
+                  CSS viene de las iniciales de "Cascading Style Sheets", que traducimos por "Hojas de estilo en cascada". Es el segundo lenguaje más esencial para crear páginas web. El primero sería HTML, con el que se define el contenido de la página. El segundo CSS, con el que se define la parte de la presentación, es decir, cómo deben mostrarse los elementos de la página, su posición, forma, espaciados, colores y en resumen, toda la parte estética.
+               </p>
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">JavaScript</div>
+            <div class="subtitle" data-swiper-parallax="-200">Lenguaje de Programación Interpretado</div>
+            <div class="text" data-swiper-parallax="-100">
+               <p>
+                  JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web. Cuando JavaScript se ejecuta en el navegador, no necesita de un compilador. El navegador lee directamente el código, sin necesidad de terceros. Por tanto, se le reconoce como uno de los tres lenguajes nativos de la web junto a HTML (contenido y su estructura) y a CSS (diseño del contenido y su estructura).
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
